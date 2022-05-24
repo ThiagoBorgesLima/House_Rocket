@@ -46,7 +46,7 @@ def overview_data( data ):
       data = data.copy()
 
    # colocar as colunas lado a lado para melhor visualizacao
-    c1, c2, = st.colums((1, 1))
+    c1, c2, = st.columns((1, 1))
 
     ## =================
     # Average Metrics
@@ -95,7 +95,7 @@ def overview_data( data ):
 def portfolio_density( data, geofile ):
     st.title( 'Region Overview' )
 
-    c1, c2, = st.colums((1, 1))
+    c1, c2, = st.columns((1, 1))
     c1.header('Portfolio Density')
 
     df = data.sample(100)
@@ -232,7 +232,7 @@ def attributes_distribution( data ):
         f_bathrooms = st.sidebar.selectbox('Max number of bathrooms',
                                            sorted(set(data['bathrooms'].unique())))
 
-        c1, c2 = st.colums(2)
+        c1, c2 = st.columns(2)
 
         # House per bedrooms
         c1.header('Houses per bedrooms')
@@ -251,7 +251,7 @@ def attributes_distribution( data ):
                                         sorted(set(data['floors'].unique())))
         f_waterview = st.sidebar.checkbox('Only Houses with Water View')
 
-        c1, c2 = st.colums(2)
+        c1, c2 = st.columns(2)
 
         # House per floors
         c1.header('Houses per Floor')
