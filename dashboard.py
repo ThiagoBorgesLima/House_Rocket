@@ -4,6 +4,7 @@ import numpy as np
 import folium
 import geopandas
 import plotly.express as px
+
 from folium.plugins import MarkerCluster
 from streamlit_folium import folium_static
 from datetime import datetime
@@ -28,30 +29,24 @@ def set_feature( data ):
     return data
 
 def overview_data( data ):
-   f_attributes = st.sidebar.multiselect('Enter columns', data.columns)
-   f_zipcode = st.sidebar.multiselect('Enter Zip Code', data['zipcode'].unique())
+    f_attributes = st.sidebar.multiselect('Enter columns', data.columns)
+    f_zipcode = st.sidebar.multiselect('Enter Zip Code', data['zipcode'].unique())
+    st.title('Data Overview')
 
-   st.title('Data Overview')
+    if ( f_zipcode != [] ) & ( f_attributes != [] ):
+       data = data.loc[data['zipcode'].isin( f_zipcode ), f_attributes]
 
-   # attributes + zipcode = Selecionar Colunas e Linhas
-   # attributes = Selecionar Colunas
-   # zipcode = Selecionar Linhas
-   # 0 + 0 = Retorno o Dataset Original
+    elif (f_zipcode != []) & (f_attributes == []):
+        data = data.loc[data['zipcode'].isin(f_zipcode), :]
 
-   if (f_zipcode != []) & (f_attributes != []):
-         data.loc[data['zipcode'].isin(f_zipcode), f_attributes]
+    elif (f_zipcode == []) & (f_attributes != []):
+     data = data.loc[:, f_attributes]
 
-   elif (f_zipcode != []) & (f_attributes == []):
-         data.loc[data['zipcode'].isin(f_zipcode), :]
-
-   elif (f_zipcode == []) & (f_attributes != []):
-     data.loc[:, f_attributes]
-
-   else:
+    else:
       data = data.copy()
 
    # colocar as colunas lado a lado para melhor visualizacao
-   c1, c2, = st.beta_columns((1, 1))
+    c1, c2, = st.beta_columns((1, 1))
 
     ## =================
     # Average Metrics
@@ -91,11 +86,11 @@ def overview_data( data ):
 
     df1.columns = ['attributes', 'max', 'min', 'mean', 'median', 'std']
 
-    c2.header('Statistics Descriptive')
+    c2.header( 'Statistics Descriptive' )
     c2.dataframe(df1, height=800)
 
-
     return  None
+
 
 def portfolio_density( data, geofile ):
     st.title( 'Region Overview' )
@@ -125,10 +120,6 @@ def portfolio_density( data, geofile ):
     with c1:
         folium_static(density_map)
 
-    # ===================
-    # Region Price Map
-    # ===================
-
     c2.header('Price Density')
 
     df = data[['price', 'zipcode']].groupby('zipcode').mean().reset_index()
@@ -151,9 +142,8 @@ def portfolio_density( data, geofile ):
     with c2:
         folium_static(region_price_map)
 
+
         return  None
-
-
 
 
 
@@ -229,7 +219,6 @@ def commercial_distribution( data ):
     st.plotly_chart(fig, use_container_width=True)
 
     return None
-
 
 
 
