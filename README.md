@@ -1,9 +1,11 @@
 # House Sales  
-
 <p align="center">
   <img src="imgs/house1.jpg" height="600" width="1000"/>
 </p>
 
+<p align="center">
+App: https://teste-rocket-1.herokuapp.com
+</p>
 
 
 
@@ -143,9 +145,12 @@ At the end of this project it was possible to reach a very good number for maxim
 
 The next steps for this project would be to create a classification for the properties, for example: if the property was an urban or rural property, if it is a house, an apartment, a studio. This would be possible by evaluating its attributes, for example, the number of bathrooms, the number of floors, whether it has a basement or not, among others.
 
+
 <p align="center">
-  <img src="imgs/app.png" height="300" width="500"/>
+  <img src="imgs/app.png" height="600" width="1000"/>
 </p>
+
+
 
 <p align="center">
 App: https://teste-rocket-1.herokuapp.com
@@ -156,4 +161,4 @@ App: https://teste-rocket-1.herokuapp.com
 House Sales in King County, USA. <b>Kaggle</b>. Available in:
 <https://www.kaggle.com/harlfoxem/housesalesprediction>.
 
-<b>Comunidade DS “Seja um DataScientist - Meigarom”.</b>  Available in: <https://www.comunidadedatascience.com/>
+Comunidade DS “Seja um DataScientist - Meigarom”. Available in: <https://www.comunidadedatascience.com/>
