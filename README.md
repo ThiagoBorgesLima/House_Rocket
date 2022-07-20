@@ -1,10 +1,10 @@
 # House Sales  
 
-App: https://teste-rocket-1.herokuapp.com/
-
 <p align="center">
-  <img src="imgs/app.png" height="300" width="500"/>
+  <img src="imgs/house1.jpg" height="300" width="500"/>
 </p>
+
+
 
 
 # Business Question
@@ -143,7 +143,13 @@ At the end of this project it was possible to reach a very good number for maxim
 
 The next steps for this project would be to create a classification for the properties, for example: if the property was an urban or rural property, if it is a house, an apartment, a studio. This would be possible by evaluating its attributes, for example, the number of bathrooms, the number of floors, whether it has a basement or not, among others.
 
+<p align="center">
+  <img src="imgs/app.png" height="300" width="500"/>
+</p>
 
+<p align="center">
+App: https://teste-rocket-1.herokuapp.com
+</p>
 
 # References
 
