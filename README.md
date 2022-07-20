@@ -104,6 +104,31 @@ As can be seen in the item "Procedure" of this article, a sale rule was created 
 
 Again, following what was defined in “Procedure”, a report was made available that informs whether the property should be renewed if the percentage of its profit is 10%.
 
+**1 - Total investment price for the purchase:**
+
+ - The sum of the sums of house prices for purchase is $3490407741.0.
+ 
+ 
+**2 - Sum of houses by condition and total sum of renovation cost:** 
+
+- Sum of house prices with bad conditions $42237511.0, and sum of cost to renovate $8451462
+
+- Sum of house prices with good conditions $223056167.0
+
+- Sum of house prices with regular conditions $3225314563.0, and sum of cost to renovate $375863411.56.
+
+ 
+
+**3 - Sales Result:** 
+
+- *Houses with bad conditions will have 10% added at the end for sale.*
+
+- *Houses with regular conditions will have 15% added at the end of the sale.*
+
+- *Houses with good conditions will have 20% added at the end for sale.*
+ 
+<b>- Profit from sales of 10902 homes is $582.541.205,2.</b>
+
 
 # Conclusion
 
