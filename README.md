@@ -3,7 +3,7 @@
 Data: https://www.kaggle.com/harlfoxem/housesalesprediction
 
 <p align="center">
-  <img src="img/selling-home.jpg" height="300" width="500"/>
+  <img src="img/usa_sales.png" height="300" width="500"/>
 </p>
 
 
@@ -24,7 +24,7 @@ So, in this project, the objective is to analyze the real estate data and help t
 # Business Assumptions
 - It will be considered in this project that YoY real estate sales in the US increased in the years 2010 - 2020 and that real estate sales below 200,000 fell and those of 400,000 and above rose. 
 <p align="center">
-  <img src="img/graph.png" height="300" width="500"/>
+  <img src="imgs/usa_sales.png" height="400" width="500"/>
 </p>
 
 - As for the renovation of the property or not, it will be taken into account the fact that a renovation can increase the value of a property by 30%. [3] 
@@ -77,41 +77,33 @@ In this case, only properties that were not recommended for purchase will be sel
 
 Through exploratory data analysis, we acquired some business insights, which are as follows:
 
-- <b>“Properties that overlook the water are 20% more expensive, on average.”<p>False:</b> Houses with a view of the water are 200% more expensive.</p>
+- <b>“Properties that overlook the water are 30% more expensive, on average.”<p>False:</b> Houses with a view of the water are 150% more expensive.</p>
 
 
-- <b>“Properties with a construction date less than 1955 are 50% cheaper, on average.”<p>False:</b> Properties with a construction date less than 1955 are 15% cheaper.</p>
+- <b>“Properties with a construction date less than 1955 are 50% cheaper, on average.”<p>False:</b> Properties with a construction date less than 1955 are 5% cheaper.</p>
 
 
-- <b>“Properties that have 3 bathrooms are 30% more expensive, on average.”<p>False:</b> Compared to properties with 1 or 2 bathrooms, the price is 60% higher. It is possible to observe that properties with more than 3 bathrooms have a very high (average) price.</p>
+- <b>“Properties that have 3 bathrooms are 30% more expensive, on average.”<p>False:</b> Compared to properties with 1 or 2 bathrooms, the price is 50% higher. It is possible to observe that properties with more than 3 bathrooms have a very high (average) price.</p>
 
 
-- <b>“Properties that have 2 floors are 30% more expensive, on average.<p>False:</b> Properties with 2 floors are 42% more expensive. </p>
+- <b>“Properties that have 2 bathrooms, have a good valorization during the years, on average.<p>False:</b> Properties with three bathrooms are currently well valued due to others reaching the highest average sales price values, properties with 1 bathroom have plummeted in price in recent years and those with two bathrooms have
+maintains a certain constancy in the media. </p>
 
-- <b>“Properties are 30% more expensive in the summer, on average.”<p>False:</b> The average price per season is equal and is not increasing. </p>
+- <b>“The renovated properties are in regions (zipcode) that the properties have appreciated over the years.”<p>Need more Options:</b> Over the years, the renovations have decreased due to the conditions of the properties, add a button to choose, through a ZIPCODE, the graph of prices as a function of time, determining whether or not there has been an increase in the value of the given area. </p>
 
 - <b>The attributes of the property that most influence the price are: bathrooms, living rooms (sqft_living) and the property's size separated from the basement (sqft_above):</b>
 <p align="center">
-  <img src="img/correlation.png"/>
+  <img src="imgs/correlation.png"/>
 </p>
 
 # Financial Results
 
 With the suggestion to purchase only properties that are below the average price in the region and are in good condition, House Rocket stops buying overvalued properties and in bad conditions that would probably not be sold easily, and may even undergo a renovation, which would increase even more the cost.
-<p align="center">
-  <img src="img/solution01.png" height="200" width="500"/>
-</p>
 
-As can be seen in the item "Procedure" of this article, a sale rule was created for the properties that 'House Rocket' would buy along with the price. Following this rule, the company will have a profit of 1,209,722,762.00.
-<p align="center">
-  <img src="img/solution02.png"/>
-</p>
+As can be seen in the item "Procedure" of this article, a sale rule was created for the properties that 'House Rocket' would buy along with the price.
 
 Again, following what was defined in “Procedure”, a report was made available that informs whether the property should be renewed if the percentage of its profit is 10%.
-If you follow this rule and consider only the properties to be renovated, House Rocket will have a profit of 31,550,965.65.
-<p align="center">
-  <img src="img/solution03.png"/>
-</p>
+
 
 # Conclusion
 
@@ -128,11 +120,4 @@ The next steps for this project would be to create a classification for the prop
 House Sales in King County, USA. <b>Kaggle</b>. Available in:
 <https://www.kaggle.com/harlfoxem/housesalesprediction>.
 
-CRIVELLI, Cesar. “O Novo Boom Imobiliário nos EUA”. <b>Investing</b>. Available in:
-<https://br.investing.com/analysis/o-novo-boom-imobiliario-nos-eua-200440130>
-
-LIMA, Veronica. “Reforma de casa: saiba quais mudanças valorizam o imóvel”. <b>Estadão</b>. Available in: <https://imoveis.estadao.com.br/investir-imoveis/reforma-de-casa-saiba-quais-mudancas-valorizam-o-imovel-para-a-venda/> 
-
-<b>Aula #08 - Projeto de Insights + Abertura da Comunidade DS.</b> Available in: <https://youtu.be/DSVQ3HcxEPw> 
-
-<b>Blog “Seja um DataScientist - Meigarom”.</b> Available in: <https://sejaumdatascientist.com/>
+<b>Comunidade DS “Seja um DataScientist - Meigarom”.</b> Available in: <https://www.comunidadedatascience.com/>
