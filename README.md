@@ -1,7 +1,7 @@
 # House Sales  
 
 <p align="center">
-  <img src="imgs/house1.jpg" height="300" width="500"/>
+  <img src="imgs/house1.jpg" height="600" width="1000"/>
 </p>
 
 
