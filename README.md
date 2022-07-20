@@ -109,6 +109,11 @@ Again, following what was defined in “Procedure”, a report was made availabl
 
 At the end of this project it was possible to reach a very good number for maximizing the profits of 'House Rocket', the CEO now has in hand which houses should buy or not, the sale price and whether or not they need a renovation, being thus it is correct to say that the main objective of this project was successfully achieved.
 
+<p align="center">
+  <img src="imgs/map.png" height="500" width="800"/>
+</p>
+
+
 # Next Steps
 
 The next steps for this project would be to create a classification for the properties, for example: if the property was an urban or rural property, if it is a house, an apartment, a studio. This would be possible by evaluating its attributes, for example, the number of bathrooms, the number of floors, whether it has a basement or not, among others.
