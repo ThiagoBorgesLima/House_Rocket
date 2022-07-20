@@ -1,9 +1,9 @@
 # House Sales  
 
-Data: https://www.kaggle.com/harlfoxem/housesalesprediction
+App: https://teste-rocket-1.herokuapp.com/
 
 <p align="center">
-  <img src="img/usa_sales.png" height="300" width="500"/>
+  <img src="imgs/app.png" height="300" width="500"/>
 </p>
 
 
@@ -120,4 +120,4 @@ The next steps for this project would be to create a classification for the prop
 House Sales in King County, USA. <b>Kaggle</b>. Available in:
 <https://www.kaggle.com/harlfoxem/housesalesprediction>.
 
-<b>Comunidade DS “Seja um DataScientist - Meigarom”.</b> Available in: <https://www.comunidadedatascience.com/>
+<b>Comunidade DS “Seja um DataScientist - Meigarom”.</b>  Available in: <https://www.comunidadedatascience.com/>
