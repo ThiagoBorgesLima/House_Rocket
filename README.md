@@ -104,10 +104,40 @@ As can be seen in the item "Procedure" of this article, a sale rule was created 
 
 Again, following what was defined in “Procedure”, a report was made available that informs whether the property should be renewed if the percentage of its profit is 10%.
 
+**1 - Total investment price for the purchase:**
+
+ - The sum of the sums of house prices for purchase is $3490407741.0.
+ 
+ 
+**2 - Sum of houses by condition and total sum of renovation cost:** 
+
+- Sum of house prices with bad conditions $42237511.0, and sum of cost to renovate $8451462
+
+- Sum of house prices with good conditions $223056167.0
+
+- Sum of house prices with regular conditions $3225314563.0, and sum of cost to renovate $375863411.56.
+
+ 
+
+**3 - Sales Result:** 
+
+- *Houses with bad conditions will have 10% added at the end for sale.*
+
+- *Houses with regular conditions will have 15% added at the end of the sale.*
+
+- *Houses with good conditions will have 20% added at the end for sale.*
+ 
+<b>- Profit from sales of 10902 homes is $582.541.205,2.</b>
+
 
 # Conclusion
 
 At the end of this project it was possible to reach a very good number for maximizing the profits of 'House Rocket', the CEO now has in hand which houses should buy or not, the sale price and whether or not they need a renovation, being thus it is correct to say that the main objective of this project was successfully achieved.
+
+<p align="center">
+  <img src="imgs/map.png" height="500" width="800"/>
+</p>
+
 
 # Next Steps
 
