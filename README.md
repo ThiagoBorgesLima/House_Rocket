@@ -162,3 +162,12 @@ House Sales in King County, USA. <b>Kaggle</b>. Available in:
 <https://www.kaggle.com/harlfoxem/housesalesprediction>.
 
 Comunidade DS “Seja um DataScientist - Meigarom”. Available in: <https://www.comunidadedatascience.com/>
+
+
+
+# Author
+
+Thiago Borges Lima
+
+
+[<img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>](https://www.linkedin.com/in/thiago-borges-lima-a731115b)
